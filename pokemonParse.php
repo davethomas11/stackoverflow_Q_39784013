@@ -53,14 +53,14 @@ foreach (range(1, 718) as $number) {
     // this is what the or checks for
     //
 
-    $imgClass = "pkmn";
+    $id = "pkmn";
     if (preg_match("/(\|$pkmn)|($pkmn\|)/", $pokemonFileContents) || $pokemonFileContents == $pkmn) {
 
-    	$imgClass .= "c";
+    	$id .= "c";
     } 
 
     echo '<img src="pokemonsprites/' . $pkmn . 
-    	'.gif" id="'.$imgClass.'"/><p style="margin-left: 45px">' . $pkmn . '</p> <br>'."\n";
+    	'.gif" id="'.$id.'"/><p style="margin-left: 45px">' . $pkmn . '</p> <br>'."\n";
     
 
 
