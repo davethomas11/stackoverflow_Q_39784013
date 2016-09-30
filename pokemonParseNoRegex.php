@@ -39,6 +39,8 @@ class Pokemon {
 
 }
 
+$t0 = microtime();
+
 // Start question askers code
 $caughtpkmnfile = file ('Pokemon.txt');
 $caughtpokemon2 = [];
@@ -75,4 +77,4 @@ foreach (range(1, 718) as $number) {
     //flush(); //ie working must
 }
 
-
+echo "" . microtime() - $t0 . " seconds elapsed";

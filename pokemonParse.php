@@ -38,6 +38,8 @@ class Pokemon {
 
 }
 
+$t0 = microtime();
+
 // Start question askers code
 $pokemonFileContents = file_get_contents("Pokemon.txt");
 
@@ -70,4 +72,4 @@ foreach (range(1, 718) as $number) {
     //flush(); //ie working must
 }
 
-
+echo "" . microtime() - $t0 . " seconds elapsed";
